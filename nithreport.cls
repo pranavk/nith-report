@@ -88,7 +88,9 @@
 %=============================================================================
 \newcommand\printauthorswithsigs[1]{\vspace{.2in} #1\\}
 \newenvironment{certificate}{
-  \includegraphics[width = 35 mm, height = 35 mm]{nithlogo.jpg}
+
+\noindent\makebox[0pt][l]{\raisebox{-0.5\height}{\includegraphics[width = 35 mm, height = 35 mm]{nithlogo.jpg}}}%
+\hfil {\bf CERTIFICATE} \\ [\@nithmedskip]
 
   {I, hereby, certify that the work which is being presented in the 
   \@degreeshort\ major project report entitled {\bf \@title}, in partial fulfillment
