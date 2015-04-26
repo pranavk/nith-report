@@ -55,8 +55,8 @@
 \gdef\@nithdegree{Bachelor of Technology}    % Default is Bachelor of Technology
 \gdef\@department{Computer Science and Engineering} % Default is Computer Science & Engineering Department
 \gdef\@degreeshort{B.Tech.}
-\gdef\@projectstartdate{XXXX}
-\gdef\@projectenddate{YYYY}
+\gdef\@startdate{XXXX}
+\gdef\@enddate{YYYY}
 \gdef\@authors{{XXX,YYY,ZZZ}}
 
 \newcommand\printauthors[1]{#1\\}
@@ -97,7 +97,7 @@
   \@degreeshort\ major project report entitled {\bf \@title}, in partial fulfillment
   of the requirements for the award of the {\bf \@nithdegree} in  {\bf \@department} and submitted 
   to the {\bf Department of \@department} of National Institute of Technology Hamirpur is
-  an authentic record of my own work carried out during a period from \@projectstartdate\ to \@projectenddate\  
+  an authentic record of my own work carried out during a period from \@startdate\ to \@enddate\
   under the supervision of {\bf {\@mentorname, \@mentordesignation, Department of \@department}}}.
 
   {The matter presented in this report has not been submitted by me for the award of any other
