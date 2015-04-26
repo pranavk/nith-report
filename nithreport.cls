@@ -41,8 +41,8 @@
 % TITLE PAGE
 % 
 %=============================================================================
-\newcommand\@medskip{0.25in}
-\newcommand\@bigskip{0.6in}
+\newcommand\@nithmedskip{0.25in}
+\newcommand\@nithbigskip{0.6in}
 
 \newcommand{\nithdegree}[1]{\gdef\@nithdegree{#1}}
 \newcommand{\department}[1]{\gdef\@department{#1}}
@@ -62,7 +62,7 @@
 \renewcommand{\maketitle}{%
   \begin{titlepage}
     \begin{center}
-      {\bf\expandafter\uppercase\expandafter{\LARGE\@title}} \\[\@bigskip]
+      {\bf\expandafter\uppercase\expandafter{\LARGE\@title}} \\[\@nithbigskip]
       {\large A major project report}\\
       {\it submitted in partial fulfillment of the} \\
       {\it requirements for the award of the degree}\\
@@ -73,9 +73,9 @@
       {\it Under the guidance of }  \\
       {\large \bf \@mentorname} \\
       {\large by} \\
-      {\noindent\expandafter\forcsvlist\expandafter\printauthors\@authors} ~\\[\@bigskip]
+      {\noindent\expandafter\forcsvlist\expandafter\printauthors\@authors} ~\\[\@nithbigskip]
       \vfill
-      \includegraphics[width = 35 mm, height = 35 mm]{nithlogo.jpg} \\[\@medskip]
+      \includegraphics[width = 35 mm, height = 35 mm]{nithlogo.jpg} \\[\@nithmedskip]
       {\large\MakeUppercase Department of \@department} \\
       {\large National Institute of Technology Hamirpur}\\
       {\large \@date}
