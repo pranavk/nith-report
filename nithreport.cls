@@ -17,7 +17,7 @@
 \ProvidesClass{nithreport}[2015/04/22 NIT Hamirpur Major Project Report Format]
 \typeout{Document Class `nithreport' v0.1 <22 April 15>}
 \usepackage{etoolbox}
-\usepackage{textcase}
+
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 
 % Defaults ...
