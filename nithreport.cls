@@ -37,6 +37,7 @@
 \gdef\@mentorname{Unknown}  % Default is Unknown
 \newcommand{\mentordesignation}[1]{\gdef\@mentordesignation{#1}}
 \gdef\@mentordesignation{Unknown}  % Default is Unknown
+\renewcommand{\bibname}{References}
 %=============================================================================
 % TITLE PAGE
 % 
