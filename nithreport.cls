@@ -41,6 +41,8 @@
 \gdef\@reportmonth{Unknown}  % Default is Unknown
 \newcommand{\reportyear}[1]{\gdef\@reportyear{#1}}
 \gdef\@reportyear{Unknown}  % Default is Unknown
+\newcommand{\report}[1]{\gdef\@report{#1}}
+\gdef\@report{A major project}  % Default is Unknown
 \renewcommand{\bibname}{References}
 %=============================================================================
 % TITLE PAGE
@@ -56,19 +58,43 @@
 \newcommand{\projectenddate}[1]{\gdef\@enddate{#1}}
 \newcommand{\authors}[1]{\gdef\@authors{#1}}
 
-\gdef\@nithdegree{Bachelor of Technology}    % Default is Bachelor of Technology
+\gdef\@nithdegree{Unknown}    % Default is Bachelor of Technology
 \gdef\@department{Computer Science and Engineering} % Default is Computer Science & Engineering Department
-\gdef\@degreeshort{B.Tech.}
+\gdef\@degreeshort{Unknown}
 \gdef\@startdate{XXXX}
 \gdef\@enddate{YYYY}
 \gdef\@authors{{XXX,YYY,ZZZ}}
 
+
+%=============================================================================
+% COVER PAGE
+%=============================================================================
+\def\coverpage{
+\thispagestyle{empty}
+\begin{center}
+      {\bf\expandafter\uppercase\expandafter{\LARGE\@title}} \\[1.5in]
+      {\LARGE\bf \@degreeshort\ Project} \\[1.5in]
+      {\large \it by} \\
+      {\noindent\expandafter\forcsvlist\expandafter\printauthors\@authors} ~\\[\@nithbigskip]
+      \vfill
+      \includegraphics[width = 30 mm, height = 30 mm]{nithlogo.jpg} \\[\@nithmedskip]
+      {\large Department of \@department} \\
+      {\large National Institute of Technology}\\
+      {\large Hamirpur -- 177 005 (India)}\\
+      {\large \@reportmonth, \@reportyear}
+    \end{center}
+}
+
+%=============================================================================
+% TITLE PAGE
+%=============================================================================
 \newcommand\printauthors[1]{#1\\}
 \renewcommand{\maketitle}{%
-  \begin{titlepage}
+\newpage
+\thispagestyle{empty}
     \begin{center}
       {\bf\expandafter\uppercase\expandafter{\LARGE\@title}} \\[\@nithbigskip]
-      {\large A major project report}\\
+      {\large \@report}\\
       {\it submitted in partial fulfillment of the} \\
       {\it requirements for the award of the degree}\\
       {\it of}\\
@@ -81,11 +107,11 @@
       {\noindent\expandafter\forcsvlist\expandafter\printauthors\@authors} ~\\[\@nithbigskip]
       \vfill
       \includegraphics[width = 30 mm, height = 30 mm]{nithlogo.jpg} \\[\@nithmedskip]
-      {\large\MakeUppercase Department of \@department} \\
-      {\large National Institute of Technology Hamirpur}\\
+      {\large Department of \@department} \\
+      {\large National Institute of Technology}\\
+      {\large Hamirpur -- 177 005 (India)}\\
       {\large \@reportmonth, \@reportyear}
     \end{center}
-  \end{titlepage}
 }
 
 %=============================================================================
@@ -121,6 +147,7 @@
 % COPYRIGHT PAGE
 %=============================================================================
 \def\copyrightpage{
+\newpage
 \thispagestyle{empty}
 \begin{center}
     \vspace*{\fill}
