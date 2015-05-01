@@ -76,7 +76,7 @@
       {\large by} \\
       {\noindent\expandafter\forcsvlist\expandafter\printauthors\@authors} ~\\[\@nithbigskip]
       \vfill
-      \includegraphics[width = 35 mm, height = 35 mm]{nithlogo.jpg} \\[\@nithmedskip]
+      \includegraphics[width = 30 mm, height = 30 mm]{nithlogo.jpg} \\[\@nithmedskip]
       {\large\MakeUppercase Department of \@department} \\
       {\large National Institute of Technology Hamirpur}\\
       {\large \@date}
@@ -90,7 +90,7 @@
 \newcommand\printauthorswithsigs[1]{\vspace{.2in} #1\\}
 \newenvironment{certificate}{
 
-\noindent\makebox[0pt][l]{\raisebox{-0.5\height}{\includegraphics[width = 35 mm, height = 35 mm]{nithlogo.jpg}}}%
+\noindent\makebox[0pt][l]{\raisebox{-0.5\height}{\includegraphics[width = 30 mm, height = 30 mm]{nithlogo.jpg}}}%
 \hfil {\bf CERTIFICATE} \\ [\@nithmedskip]
 
   {I, hereby, certify that the work which is being presented in the 
