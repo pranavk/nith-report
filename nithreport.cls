@@ -37,6 +37,10 @@
 \gdef\@mentorname{Unknown}  % Default is Unknown
 \newcommand{\mentordesignation}[1]{\gdef\@mentordesignation{#1}}
 \gdef\@mentordesignation{Unknown}  % Default is Unknown
+\newcommand{\reportmonth}[1]{\gdef\@reportmonth{#1}}
+\gdef\@reportmonth{Unknown}  % Default is Unknown
+\newcommand{\reportyear}[1]{\gdef\@reportyear{#1}}
+\gdef\@reportyear{Unknown}  % Default is Unknown
 \renewcommand{\bibname}{References}
 %=============================================================================
 % TITLE PAGE
@@ -79,7 +83,7 @@
       \includegraphics[width = 30 mm, height = 30 mm]{nithlogo.jpg} \\[\@nithmedskip]
       {\large\MakeUppercase Department of \@department} \\
       {\large National Institute of Technology Hamirpur}\\
-      {\large \@date}
+      {\large \@reportmonth, \@reportyear}
     \end{center}
   \end{titlepage}
 }
@@ -111,6 +115,19 @@
 
 \noindent {Head of Department \hspace*{\fill}   \@mentorname}\\
 {\hspace*{\fill} \@mentordesignation}
+}
+
+%=============================================================================
+% COPYRIGHT PAGE
+%=============================================================================
+\def\copyrightpage{
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{\fill}
+    {\large\bf Copyright \copyright\ NIT HAMIRPUR (HP), INDIA, \@reportyear}
+    \vspace*{\fill}
+    \clearpage
+\end{center}
 }
 
 %=============================================================================
