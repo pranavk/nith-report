@@ -37,6 +37,8 @@
 \gdef\@mentorname{Unknown}  % Default is Unknown
 \newcommand{\mentordesignation}[1]{\gdef\@mentordesignation{#1}}
 \gdef\@mentordesignation{Unknown}  % Default is Unknown
+\newcommand{\mentoraffiliation}[1]{\gdef\@mentoraffiliation{#1}}
+\gdef\@mentoraffiliation{Unknown}  % Default is Unknown
 \newcommand{\reportmonth}[1]{\gdef\@reportmonth{#1}}
 \gdef\@reportmonth{Unknown}  % Default is Unknown
 \newcommand{\reportyear}[1]{\gdef\@reportyear{#1}}
