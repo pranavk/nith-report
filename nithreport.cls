@@ -2,7 +2,7 @@
 % LaTeX Class file for the National Institute of Technology Hamirpur Report Format
 %   by Pranav Kant 2015/04/22
 %
-% Template based on withesis.cls from 
+% Template based on withesis.cls from
 % http://www.ctan.org/tex-archive/macros/latex/contrib/withesis/
 %
 % Few snippets based on iitbthesis.cls
@@ -24,7 +24,7 @@
 \ProcessOptions
 
 %=============================================================================
-% a4paper: report must be printed on a4 size paper. 
+% a4paper: report must be printed on a4 size paper.
 % 12pt:    font size must be 12 pt
 %
 % NITH Report format requires text size to be 12 pt
@@ -48,7 +48,7 @@
 \renewcommand{\bibname}{References}
 %=============================================================================
 % TITLE PAGE
-% 
+%
 %=============================================================================
 \newcommand\@nithmedskip{0.25in}
 \newcommand\@nithbigskip{0.6in}
@@ -119,30 +119,33 @@
 %=============================================================================
 % CERTIFICATE
 %=============================================================================
-\newcommand\printauthorswithsigs[1]{\vspace{.2in} #1\\}
+\newcommand\printauthorswithsigs[1]{\vspace{.15in} #1\\}
 \newenvironment{certificate}{
 
 \noindent\makebox[0pt][l]{\raisebox{-0.5\height}{\includegraphics[width = 30 mm, height = 30 mm]{nithlogo.jpg}}}%
 \hfil {\bf CERTIFICATE} \\ [\@nithmedskip]
 
-  {I, hereby, certify that the work which is being presented in the 
+  {I, hereby, certify that the work which is being presented in the
   \@degreeshort\ major project report entitled {\bf \@title}, in partial fulfillment
-  of the requirements for the award of the {\bf \@nithdegree} in  {\bf \@department} and submitted 
+  of the requirements for the award of the {\bf \@nithdegree} in  {\bf \@department} and submitted
   to the {\bf Department of \@department} of National Institute of Technology Hamirpur is
   an authentic record of my own work carried out during a period from \@startdate\ to \@enddate\
-  under the supervision of {\bf {\@mentorname, \@mentordesignation, Department of \@department}}}.
+  under the supervision of {\bf \@mentorname}, \@mentordesignation, \@mentoraffiliation}.
 
   {The matter presented in this report has not been submitted by me for the award of any other
   degree elsewhere.}
   \begin{flushright}
-    \expandafter\forcsvlist\expandafter\printauthorswithsigs\@authors ~\\
+    \expandafter\forcsvlist\expandafter\printauthorswithsigs\@authors
   \end{flushright}
- \vfill
   {This is to certify that the above statement made by the candidates is correct to the best of my
-  knowledge.} \\
+  knowledge.}
 
-\noindent {Head of Department \hspace*{\fill}   \@mentorname}\\
-{\hspace*{\fill} \@mentordesignation}
+\noindent {Date: \hspace*{\fill}   \@mentorname}\\
+{\hspace*{\fill} \@mentordesignation}\\[.2in]
+\vfill
+  % TODO: Write <name of student> or "students" after checking the number of students.
+\noindent{The project Viva-Voce Examination of above students has been held on .....................}\\[.4in]
+{Signature of Supervisor \hspace*{\fill} Signature of External Examiner}
 }
 
 %=============================================================================
@@ -218,7 +221,7 @@
     \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
   \fi
   \vskip\belowcaptionskip}
-  
+
 %=============================================================================
 % GLOSSARY
 %=============================================================================
@@ -238,7 +241,7 @@
 % - produce the table of contents entry for the nomenclature section
 % - start a new page with NOMENCLATURE centered two inches from the top
 %=============================================================================
-\def\nomenclature{ 
+\def\nomenclature{
   \chapter*{Nomenclature}
   \addcontentsline{toc}{chapter}{Nomenclature}}
 \def\endnomenclature{\par\newpage}
@@ -285,7 +288,7 @@
   {\renewcommand{\baselinestretch}{\oneskip}\Large\normalsize}
 \newcommand{\doublespace}
   {\renewcommand{\baselinestretch}{\twoskip}\Large\normalsize}
-  
+
 % ========================
 % Setting report format
 % ========================
