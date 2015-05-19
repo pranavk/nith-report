@@ -141,10 +141,10 @@
   knowledge.}
 
 \noindent {Date: \hspace*{\fill}   \@mentorname}\\
-{\hspace*{\fill} \@mentordesignation}\\[.2in]
+{\hspace*{\fill} \@mentordesignation}
 \vfill
   % TODO: Write <name of student> or "students" after checking the number of students.
-\noindent{The project Viva-Voce Examination of above students has been held on .....................}\\[.4in]
+\noindent{The project Viva-Voce Examination of above students has been held on .....................}\\[.25in]
 {Signature of Supervisor \hspace*{\fill} Signature of External Examiner}
 }
 
